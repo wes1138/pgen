@@ -1,10 +1,10 @@
 main = pgen
-CC = g++
-CFLAGS = -march=native -O2 -Wall -std=c++0x
+CC = gcc
+CFLAGS = -march=native -O2 -Wall
 LDADD =
 LDFLAGS =
 
-$(main) : pgen.cpp
+$(main) : pgen.c
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^ $(LDADD)
 
 .PHONY : clean

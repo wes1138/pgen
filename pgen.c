@@ -1,7 +1,7 @@
-#include <cstdio>
+#include <stdio.h>
 #include <string.h>
 #include <getopt.h>
-#include <cstdlib>
+#include <stdlib.h>
 
 static const char* usage =
 "Usage: %s [OPTIONS]...\n"
